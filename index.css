@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900;&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    pointer-events: none;
+    text-decoration: none;
+}
+.navbar a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right:40px ;
+    position: relative;
+}
+.navbar .home::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.navbar .about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.navbar .about::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.navbar .services::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.navbar .contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.navbar .btnLogin-popup{
+    position: relative;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar .btnLogin-popup::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+.section{
+    min-height: 100vh;
+    background: url("bgimage2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper{
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background-color:transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: -1px 0 20px rgba(0,0, 0,0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper.active-popup{
+    opacity: 1;
+    pointer-events: auto;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+}
+.close i{
+    font-size: 20px;
+    font-weight: 800;
+
+}
+.wrapper .form-box.login{
+    display: block;
+}
+.wrapper.active .form-box.login{
+    display: none;
+}
+.wrapper .form-box.rigister{
+    display: none;
+}
+.wrapper.active .form-box.rigister{
+    display: block;
+}
+.wrapper .logrgstr-box{
+    width: 100%;
+}
+.logreg-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+.logreg-title h2{
+    font-size:32px;
+}
+.logreg-title p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.logrgstr-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.input-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right:25px;
+}
+.input-box label{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 19px;
+    transform: translateY(-50%);
+}
+.logrgstr-box .remember-forgot{
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0px 15px;
+}
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forgot a{
+   color: #fff;
+   text-decoration: none
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.logrgstr-box .btn{
+    height: 40px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0, 0,.2);
+    font-size:20px ;
+    color: #000;
+    font-weight: 500;
+}
+.logrgstr-box .logreg-link{
+    text-align: center;
+    margin:25px 0 15px;
+    color: #fff;
+    font-size: 15px;
+}
+.rigister-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.login-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+.login-link:hover{
+    text-decoration: underline;
+}
+.rigister-link:hover{
+    text-decoration: underline;
+}
+.midia-options{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.midia-options a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin: 10px 0;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0, 0,0.2);
+    transition: .5sec;
+}
+.midia-options a:hover{
+background: rgba(255,255, 255,.1);
+}
+.midia-options a i{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 3px;
+}

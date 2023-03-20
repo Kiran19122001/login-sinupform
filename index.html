@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginform</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+        <nav class="navbar">
+            <a href="#" class="home">Home</a>
+            <a href="#" class="about">About</a>
+            <a href="#" class="services">Services</a>
+            <a href="#" class="contact">Conatact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="wrapper">
+            <span class="close">
+                <i class='bx bx-x'></i>
+            </span>
+            <div class="logrgstr-box">
+                <!-- login-form -->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>Login</h2>
+                        <p>Please login to use the platform</p>
+                    </div>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class='bx bxs-envelope'></i>
+                                </span>
+                                <input type="email" required>
+                                <label for="#">Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon">
+                                    <i class='bx bxs-lock-alt'></i>
+                                </span>
+                                <input type="password" required>
+                                <label for="#">Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label for="#"><input type="checkbox">
+                                Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="logreg-link">
+                                <span>Don'nt have an account?</span>
+                                <a href="#" class="rigister-link">Rigister</a>
+                            </div>
+                        </form>
+                        <div class="midia-options">
+                            <a href="#">
+                                <i class='bx bxl-google'></i>
+                                <span>Login with Google</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                        </div>
+                </div>
+                <!-- rigister form -->
+                <div class="form-box rigister">
+                    <div class="logreg-title">
+                        <h2>Rigistration</h2>
+                        <p>Please provide the below details</p>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class='bx bxs-user'></i>
+                            </span>
+                            <input type="text" required>
+                            <label for="#">First name</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class='bx bxs-envelope'></i>
+                            </span>
+                            <input type="email" required>
+                            <label for="#">Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class='bx bxs-lock-alt'></i>
+                            </span>
+                            <input type="password" required>
+                            <label for="#">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for="#"><input type="checkbox">
+                                I agree to the ters and conditions</label>
+                           
+                        </div>
+                        <button type="submit" class="btn">Rigister</button>
+                        <div class="logreg-link">
+                            <span>Already have an account?</span>
+                            <a href="#" class="login-link">Login</a>
+                        </div>
+                    </form>
+                    <div class="midia-options">
+                        <a href="#">
+                            <i class='bx bxl-google'></i>
+                            <span>Sinup with Google</span>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                            <span>Sinup with Facebook</span>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
